@@ -1,4 +1,4 @@
-/* General Styles */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -27,7 +27,7 @@ body {
   background: linear-gradient(to bottom, black, white);
   height: 750px;
 }
-/* Header Styling */
+
 header {
   height: 100px;
   display: flex;
@@ -83,7 +83,6 @@ header h2:hover {
   transform: translateY(-2px);
 }
 
-/* About Section */
 .about {
   padding: 20px;
   width: 1000px;
@@ -122,7 +121,6 @@ header h2:hover {
   line-height: 1.6;
 }
 
-/* Horizontal Rule Styling */
 hr {
   border: none;
   height: 1px;
