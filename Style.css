@@ -148,7 +148,7 @@ footer {
   font-size: larger;
 }
 
-/* Responsive Styles */
+
 @media (max-width: 768px) {
   header h1 {
     font-size: 2rem;
@@ -201,7 +201,7 @@ footer {
 }
 
 @media (min-width: 1024px) {
-  /* Desktop/Laptop view adjustments */
+
   .main {
     padding: 40px;
   }
