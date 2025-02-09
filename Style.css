@@ -1,0 +1,163 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.main{
+  background: linear-gradient(to bottom, black, white);
+  height: 750px;
+}
+/* Header Styling */
+header {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px 8px 0 0;
+  transform: translateY(-20px);
+  opacity: 0;
+  animation: slideDown 0.8s ease-out 0.3s forwards;
+  font-size: x-large;
+  font-weight: 990;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+header h2 {
+  margin: 0;
+  transition: color 0.3s;
+}
+
+header h2:hover {
+  color: #ffcc00;
+}
+
+#header-right {
+  display: flex;
+  gap: 15px;
+}
+
+#header-right a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  transition: background 0.3s, transform 0.3s;
+  border-radius: 5px;
+}
+
+#header-right a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+/* About Section */
+.about {
+  padding: 20px;
+  width: 1000px;
+  height: 500px;
+  font-size: 20px;
+  margin-top: 20px;
+  transform: translateY(10px);
+  animation: fadeInUp 1s ease-out 0.7s forwards;
+  margin-left: 260px;
+  background: url("blurred.png") no-repeat center center;
+  background-size: cover;
+  border-radius: 10px;
+  font-weight: 550;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about h3 {
+  color: #0056b3;
+}
+
+.about p {
+  line-height: 1.6;
+}
+
+/* Horizontal Rule Styling */
+hr {
+  border: none;
+  height: 1px;
+  background: #ccc;
+  margin: 20px 0;
+}
+
+#court , #judge , #audio{
+  background: linear-gradient(45deg, #a28982, #bdb1b1, #a69bb0, #666b74);
+  animation: gradientScroll 10s ease infinite;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+  text-align: center;
+}
+
+#court h2 {
+  color: #fff; 
+  margin-bottom: 15px;
+}
+
+#court p , #judge p , #audio p{
+  color: #fff; 
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
+  font-size: larger;
+}
