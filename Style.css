@@ -3,7 +3,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  color: #333;
+  color: #000000;
   opacity: 0;
   animation: fadeIn 1s ease-in-out forwards;
 }
@@ -84,17 +84,7 @@ header h2:hover {
 }
 
 .about {
-  padding: 20px;
-  width: 1000px;
-  height: 500px;
   font-size: 20px;
-  margin-top: 20px;
-  transform: translateY(10px);
-  animation: fadeInUp 1s ease-out 0.7s forwards;
-  margin-left: 260px;
-  background: url("blurred.png") no-repeat center center;
-  background-size: cover;
-  border-radius: 10px;
   font-weight: 550;
 }
 
@@ -109,9 +99,7 @@ header h2:hover {
   }
 }
 
-.about:hover {
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
+
 
 .about h3 {
   color: #0056b3;
@@ -158,4 +146,71 @@ footer {
   padding: 10px;
   bottom: 0;
   font-size: larger;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  #header-right {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #header-right a {
+    font-size: 1rem;
+  }
+
+  .main {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  section h3 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  #header-right a {
+    font-size: 0.9rem;
+  }
+
+  .main {
+    padding: 10px;
+    margin: 5px;
+  }
+
+  section h3 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Desktop/Laptop view adjustments */
+  .main {
+    padding: 40px;
+  }
+
+  #header-right {
+    gap: 20px;
+  }
+
+  section h3 {
+    font-size: 2rem;
+  }
 }
